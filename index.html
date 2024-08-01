@@ -30,10 +30,10 @@ Video_0.pause();
 button.addEventListener("click", function(evt){
 console.log("button clicked")
 if(Video_0.muted==true){
-button.innerHTML="MUDO";
+button.innerHTML="Mudo";
 Video_0.muted=false;
 }else{
-button.innerHTML="ATIVAR SOM";
+button.innerHTML="Ativar Som";
 Video_0.muted=true;
 }
 });
@@ -102,7 +102,7 @@ if (markerFound == 1) {
 
         <div style='position: absolute; bottom: 10px; right: 30px; width:100%; text-align: center; z-index: 1;'>      
             <button id="mutebutton" style='position: absolute; bottom: 10px'>
-                ATIVAR SOM
+                Ativar Som
             </button>
         </div>
 
@@ -124,9 +124,9 @@ if (markerFound == 1) {
 <!-- BEGIN: Add Image Target (marker) -->
 <a-marker id="marker" type="pattern" preset="custom" src="pattern-helinho.patt" url="pattern-helinho.patt" emitevents="true" button>
 <!-- END: Add Image Target (marker) -->
-        
+
 <!-- BEGIN: Unity Compiled Objects -->
-<a-video width="1.5" height="0.8" src="#Video_Asset_0" class="intersectable" position="0 0.29 0" rotation="0 -180 0" color="#FFFFFF" 
+<a-video width="1.5" height="0.8" src="#Video_Asset_0" class="intersectable" position="0 0.384 -0.274" rotation="0 0 0" color="#FFFFFF" 
 ></a-video>
 <!-- END: Unity Compiled Objects -->
 
