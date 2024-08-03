@@ -29,12 +29,12 @@ Video_0.pause();
 });
 button.addEventListener("click", function(evt){
 console.log("button clicked")
-if(Video_0.muted==false){
+if(Video_0.muted==true){
 button.innerHTML="Mudo";
-Video_0.muted=true;
+Video_0.muted=false;
 }else{
 button.innerHTML="Ativar Som";
-Video_0.muted=false;
+Video_0.muted=true;
 }
 });
 
