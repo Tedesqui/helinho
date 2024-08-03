@@ -29,7 +29,12 @@ Video_0.pause();
 });
 button.addEventListener("click", function(evt){
 console.log("button clicked")
-
+if(Video_0.muted==false){
+button.innerHTML="Mudo";
+Video_0.muted=true;
+}else{
+button.innerHTML="Ativar Som";
+Video_0.muted=false;
 }
 });
 
@@ -95,6 +100,9 @@ if (markerFound == 1) {
 <!-- BEGIN: Middle HTML -->
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
+        <div style='position: absolute; bottom: 10px; right: 30px; width:100%; text-align: center; z-index: 1;'>      
+            <button id="mutebutton" style='position: absolute; bottom: 10px'>
+                Ativar Som
             </button>
         </div>
 
