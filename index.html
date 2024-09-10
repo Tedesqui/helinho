@@ -19,13 +19,13 @@
     <video id="Video_Asset_0" loop crossorigin="anonymous" muted autoplay loop src="videos/helinho.mp4" video.muted= "false"></video>
 
 </a-assets>
- <a-video width="10" height="15" src="videos/helinho.mp4" class="intersectable" position="0 0 0" rotation="0 0 0" color="#FFFFFF"
+ <a-video width="10" height="15" src="videos/helinho.mp4" class="intersectable" position="0 0 0" rotation="0 0 0" color="#FFFFFF" gps-entity-place="latitude: -23; longitude: -44; latitude: -22; longitude: -44;"
 ></a-video>
         
       ></a-entity>
       <a-camera id='camera1' look-controls-enabled='false' arjs-device-orientation-controls='smoothingFactor: 0.1' gps-new-camera='gpsMinDistance: 5'> </a-camera>
 
-      </a-camera>
+      <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
 </html>
